@@ -1,0 +1,251 @@
+body {
+  color: white;
+  background-image: url(https://media.tenor.com/jOjF9a-DUToAAAAC/rain-drizzle.gif);
+  background-repeat: repeat;
+}
+
+.navbar {
+  background-color: rgb(78, 78, 78);
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.title h1 {
+  text-align: center;
+  font-family: "Monoton";
+  font-size: 40px;
+  color: #fff;
+  -webkit-animation: h1 8s infinite;
+  animation: h1 8s infinite;
+  text-decoration: underline double;
+  padding-top: 3%;
+}
+
+.fade {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  perspective: 900vh;
+}
+
+.sub-container {
+  border: dotted rgb(0, 171, 250);
+}
+
+.subtitle {
+  font-size: 2vh;
+  text-align: center;
+  color: rgb(0, 171, 250);
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.column {
+  margin-top: 5%;
+  align-content: center;
+  margin-bottom: 15%;
+}
+
+.column4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.txt {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4vh;
+  letter-spacing: 0.1vh;
+  color: #eee;
+  animation: rotate 2s ease-in-out alternate infinite;
+}
+
+.txt::before {
+  content: attr(data-shadow);
+  color: transparent;
+  text-shadow: 0 0 15px #111;
+  position: absolute;
+  z-index: -1;
+  margin: -0.1em 0 0 0;
+  animation: skew 2s ease-in-out alternate infinite;
+  transform-origin: bottom;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(-10deg);
+    text-shadow: 1px -1px #ccc, 2px -1px #bbb, 3px -2px #aaa, 4px -2px #999,
+      5px -3px #888, 6px -3px #777;
+  }
+
+  to {
+    transform: rotateY(10deg);
+    text-shadow: -1px -1px #ccc, -2px -1px #bbb, -3px -2px #aaa, -4px -2px #999,
+      -5px -3px #888, -6px -3px #777;
+  }
+}
+
+@keyframes skew {
+  from {
+    transform: scaleY(0.3) skewX(-15deg);
+  }
+
+  to {
+    transform: scaleY(0.3) skewX(-20deg);
+  }
+}
+
+form {
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+input:hover {
+  background-color: lightsteelblue;
+}
+
+.obli {
+  border-left: inset rgb(0, 171, 250) 1vh;
+}
+
+.btn {
+  width: 15vh;
+  height: 4vh;
+  font-size: 3h;
+}
+
+.gracias {
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gracias h3 {
+  font-size: 4vh;
+  font-family: monospace;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  line-height: 50px;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: demo-1 15s linear infinite;
+  -webkit-animation: demo-1 15s linear infinite;
+  animation: demo-1 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes demo-1 {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes demo-1 {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes demo-1 {
+  0% {
+    -moz-transform: translateX(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+label {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.btn:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  background-color: rgb(0, 171, 250);
+}
+
+@keyframes h1 {
+  0% {
+    text-shadow: 0 0 3px #ff0000;
+    color: #fff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #ff0000;
+    color: pink;
+  }
+
+  100% {
+    text-shadow: 0 0 3px #ff0000;
+    color: #fff;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar" id="nav">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="index.html">Enlcae1</a>
+      <a href="index.html">Enlace2</a>
+      <a href="index.html">Enlace3</a>
+    </nav>
+    <br />
+
+    <div class="title">
+      <h1>Formulario</h1>
+    </div>
+    <br />
+
+    <div class="fade">
+      <h1 class="txt">Rellena el siguiente formulario:</h1>
+    </div>
+    <br />
+
+    <div class="sub-container">
+      <h2 class="subtitle">
+        Aquellos campos marcados en azul son obligatorios
+      </h2>
+    </div>
+    <br />
+
+    <form name="Desarrollo" method="post">
+      <div class="contenedor">
+        <div class="column">
+          <label class="obli" for="text">Introduce tu nombre:</label><br />
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Ejemplo: Santiago"
+            required
+            autofocus
+            autocomplete="on"
+          /><br /><br />
+
+          <label for="prov">Escoge tu provincia: </label><br />
+          <input
+            type="text"
+            list="provincias"
+            placeholder="Ejemplo: Barcelona"
+          />
+          <datalist id="provincias">
+            <option value="Alicante">Alicante</option>
+            <option value="Granada">Granada></option>
+            <option value="Islas Baleares">Islas Baleares</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Valenncia">Valenncia</option>
+            <option value="Barcelona">Barcelona</option>
+          </datalist>
+          <br /><br />
+
+          <label for="number">Introduce tu edad:</label><br />
+          <input
+            type="number"
+            name="age"
+            id="number"
+            value="18"
+            min="0"
+            max="150"
+          /><br /><br />
+
+          <label for="date">Introduce tu fecha de nacimiento:</label><br />
+          <input type="date" name="date" id="date" /><br /><br />
+
+          <label class="obli" for="mail">Introduce tu correo electrónico:</label
+          ><br />
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="ejemplo@gmail.com"
+            required
+          /><br /><br />
+
+          <label class="obli" for="pwd">Introduce una contraseña:</label><br />
+          <input
+            type="password"
+            name="pwd"
+            id="pwd"
+            required
+            pattern="(?=^\d{1})(?=.[a-z])(?=.*[A-Z]{1}).{8,}"
+            title="8 o más caracteres, el primero un número y el último una mayúscula"
+            placeholder="Min 8 caracteres"
+          /><br /><br />
+        </div>
+
+        <div class="column">
+          <label for="files">Introduce los archivos deseados:</label><br />
+          <input type="file" name="files" id="files" multiple /><br /><br />
+
+          <label for="time">Introduce la hora actual:</label><br />
+          <input type="time" name="time" id="time" /><br /><br />
+
+          <label for="tel">Introduce tu número de teléfono:</label><br />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Ejemplo: +34 632813069"
+          /><br /><br />
+
+          <label for="color">Escoge tu color favorito:</label><br />
+          <input
+            type="color"
+            name="color"
+            id="color"
+            value="#CA33FF"
+          /><br /><br />
+
+          <label for="month">Introduce el mes actual:</label><br />
+          <input type="month" name="month" id="month" /><br /><br />
+
+          <label for="range">Mueve la barra:</label><br />
+          <input
+            type="range"
+            name="range"
+            id="range"
+            step="1"
+            min="0"
+            max="10"
+            value="5"
+          /><br /><br />
+        </div>
+
+        <div class="column">
+          <label for="radio">Escoge un color:</label><br />
+          <input
+            class="standard"
+            type="radio"
+            name="radio"
+            id="col"
+            value="rojo"
+            checked
+          />
+          <label style="color: red" for="col">Rojo</label><br />
+          <input type="radio" name="radio" id="col" value="verde" />
+          <label style="color: green" for="col">Verde</label><br />
+          <input type="radio" name="radio" id="col" value="azul" />
+          <label style="color: rgb(0, 81, 255)" for="col">Azul</label><br />
+          <input type="radio" name="radio" id="col" value="amarillo" />
+          <label style="color: yellow" for="col">Amarillo</label><br /><br />
+
+          <label for="checkbox">Escoge tus marcas favoritas:</label><br />
+          <input
+            type="checkbox"
+            name="LV"
+            id="marcas"
+            value="Louis Vouitton"
+            checked
+          />
+          <label for="marcas">Louis Vouitton</label><br />
+          <input type="checkbox" name="G" id="marcas" value="Gucci" />
+          <label for="marcas">Gucci</label><br />
+          <input type="checkbox" name="Dior" id="marcas" value="Dior" />
+          <label for="marcas">Dior</label><br />
+          <input type="checkbox" name="Palace" id="marcas" value="Palace" />
+          <label for="marcas">Palace</label><br />
+          <input type="checkbox" name="Sup" id="marcas" value="Supreme" />
+          <label for="marcas">Supreme</label><br /><br />
+
+          <label for="url">Introduce la url de una imagen:</label><br />
+          <input type="url" name="url" id="url" />
+        </div>
+
+        <div class="column4">
+          <a href="" onclick="alert('Datos enviados correctamente')">
+            <input
+              id="image"
+              name="image"
+              type="image"
+              src="https://ichef.bbci.co.uk/news/640/cpsprodpb/888C/production/_128065943_gettyimages-1450389057.jpg"
+              width="100%"
+              height="auto"
+              alt="Messi"
+          /></a>
+
+          <a href="" onclick="alert('Datos reinicados correctamente')"
+            ><input type="reset" value="Reiniciar" class="btn"
+          /></a>
+
+          <a href="" onclick="alert('Datos enviados correctamente')">
+            <input type="submit" class="btn" value="Enviar" />
+          </a>
+        </div>
+      </div>
+    </form>
+    <br />
+
+    <div class="gracias">
+      <h3>GRACIAS POR CONTESTAR</h3>
+    </div>
+
+    <br /><br /><br />
+    <div class="footer">
+      <p>Este es el footer de la página web</p>
+    </div>
+  </body>
+</html>
