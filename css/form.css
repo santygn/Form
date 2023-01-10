@@ -101,6 +101,7 @@ body {
   transform-origin: bottom;
 }
 
+/*Animacion de texto*/
 @keyframes rotate {
   from {
     transform: rotateY(-10deg);
@@ -150,6 +151,7 @@ input:hover {
   position: relative;
 }
 
+/*Animacion de texto*/
 .gracias h3 {
   font-size: 4vh;
   font-family: monospace;
@@ -233,6 +235,7 @@ label {
   background-color: rgb(0, 171, 250);
 }
 
+/*Animacion de rotacion de texto en botones*/
 @keyframes h1 {
   0% {
     text-shadow: 0 0 3px #ff0000;
